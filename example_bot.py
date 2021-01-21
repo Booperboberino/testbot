@@ -1,3 +1,4 @@
+import constants
 import discord
 print("Working!")
 client = discord.Client()
@@ -14,4 +15,4 @@ async def on_message(message):
     if message.content.startswith('honk'):
         await message.channel.send("`honk`")
 
-client.run('ODAwOTE0MDc5NjgxNDc4Njg2.YAZDXA.K1cZM1gV9iU_kXotTEixOAthsP7fw')
+client.run(constants.token)
